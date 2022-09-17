@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Errno</title>
+    <link rel="stylesheet" href="sectionsstyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&family=Radio+Canada:wght@300&display=swap" rel="stylesheet"> 
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#menu">Main</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <section id="menu">
+        <div class="rect1">
+            <div class="left-main">
+                <p>Rozwuj.</p>
+                <p>Kodowanie.</p>
+                <p>Zwuj.</p>
+            </div>
+        </div>
+        </div>
+        <div class="rect2">
+            <div class="centered">
+                <img src="lightLogo.png" alt="">
+                <p>Koło które zaczyna się kręcić.</p>
+                <p>|get started|</p>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="section__about">
+        <div class="rect3">
+            <h1 class="about--title">O nas</h1>
+            <p class="center--text">
+                Jesteśmy zainteresowani technologia, komputerami, wszystkim związanym z branża IT
+                i nie tylko. Posiadamy chęć do nauki, próbujemy zrobić rzeczy które nam przyjdą na myśl,
+                niezależnie od środowiska, języka programowania, silnika, programu w jakim mamy pracować
+                jeżeli wpadniemy na pomysł próbujemy znaleźć jak najwygodniejsze narzędzie do
+                zbudowania tego pomysłu.
+            </p>
+            <img src="123.png" alt="">
+        </div>
+        <div class="rect4">
+            <h1 class="about--title" style="color: var(--cl3);">Dlaczego powstaliśmy?</h1>
+            <p class="center--text" style="color: var(--cl3);">
+                Na początku drugiego semestru uznaliśmy, że niewystarczające dla nas były zajęcia
+                zapewniane na kierunku , chcieliśmy działać, trenować, i zdobywać nowe umiejętności przez
+                co uznaliśmy że założenie koła naukowego pozwoli nam rozwijać się w szybszym i bardziej
+                elastycznym czasie.                   
+            </p>
+        </div>
+        <div class="rect5">
+            <h1 class="about--title">Nasze Cele</h1>
+            <p class="center--text">
+                Zdobycie doświadczenia w dziedzinie informatyki;
+                Chęć zdobywania wiedzy;
+                Nauka pracy w zespole;
+                Chęć działania, bycia aktywnym w dziedzinie informatyki;
+                Stworzenie środowiska do jak najlepszej nauki dla przyszłego pokolenia.
+            </p>
+        </div>
+    </section>
+    <section class="section__projects" id="projects">
+        SOON
+    </section>
+    <section class="section__contact" id="contact">
+        <div class="rect6">
+            <h1 class="about--title">KONTAKT</h1>
+            <p class="about--title">
+                Zapraszamy do kontaktu przez maila <br> 
+                aluerrno@gmail.com <br>
+            </p>
+        </div>
+        <div class="rect7">
+            <div class="test">
+                <h2>Członkowie</h2>
+                <p>Nikodem Panknin
+                </p>
+                <hr>
+                <p>Miłosz Klim
+                </p>
+                <hr>
+                <p>Jakub Kwieciński
+                </p>
+                <hr>
+
+            </div>
+        </div>
+    </section>
+    
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+</html>
