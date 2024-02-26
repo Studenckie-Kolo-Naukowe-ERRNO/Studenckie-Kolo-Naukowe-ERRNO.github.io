@@ -1,0 +1,36 @@
+
+
+nav {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 19%, rgba(255,127,42,1) 100%); 
+}
+
+.nav-item {
+    border-bottom: 1px rgb(210, 210, 210) solid;
+}
+
+
+
+body {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(255,127,42,1) 80%); 
+}
+
+.btn-about {
+    background-color: #ff7f2a;
+    color: white;
+}
+
+.btn-about:hover {
+    background-color: #ff7f2a;
+}
+
+.gradient-color {
+    background: rgb(255,255,255);
+    background: linear-gradient(139deg, rgba(255,255,255,1) 46%, rgba(255,127,42,1) 100%);
+    border-color: transparent;
+}
+
+.abouts{
+    text-align: center;
+  }
