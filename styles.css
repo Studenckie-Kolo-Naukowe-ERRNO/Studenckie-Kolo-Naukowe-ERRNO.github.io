@@ -22,7 +22,10 @@ body {
 }
 
 .btn-about:hover {
-    background-color: #ff7f2a;
+    background-color: white;
+    color: #ff7f2a;
+    --bs-btn-hover-border-color: #ff7f2a;
+    --bs-btn-border-width: 1px;
 }
 
 .gradient-color {
