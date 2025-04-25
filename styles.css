@@ -1,39 +1,46 @@
-
-
-nav {
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 19%, rgba(255,127,42,1) 100%); 
+html {
+    height: 100%;
 }
-
-.nav-item {
-    border-bottom: 1px rgb(210, 210, 210) solid;
-}
-
-
 
 body {
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(255,127,42,1) 80%); 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Anonymous Pro', monospace;
 }
 
-.btn-about {
-    background-color: #ff7f2a;
-    color: white;
+.main-content {
+    flex-grow: 1;
 }
 
-.btn-about:hover {
-    background-color: white;
-    color: #ff7f2a;
-    --bs-btn-hover-border-color: #ff7f2a;
-    --bs-btn-border-width: 1px;
+.hero-section {
+    background-color: #e9ecef;
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: .3rem;
 }
 
-.gradient-color {
-    background: rgb(255,255,255);
-    background: linear-gradient(139deg, rgba(255,255,255,1) 46%, rgba(255,127,42,1) 100%);
-    border-color: transparent;
+.btn-primary {
+    background-color: #ff8d3f;
+    border-color: #ff8d3f;
 }
 
-.abouts{
-    text-align: center;
-  }
+.btn-primary:hover {
+    background-color: #e07b34;
+    border-color: #d1712e;
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 141, 63, 0.5);
+}
+
+.btn-primary:active {
+    background-color: #d1712e;
+    border-color: #c26729;
+}
+
+footer {
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+    flex-shrink: 0;
+}
