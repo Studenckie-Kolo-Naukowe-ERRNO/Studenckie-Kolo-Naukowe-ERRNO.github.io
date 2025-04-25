@@ -42,7 +42,17 @@ body {
     padding-top: 4rem;
 }
 
-/* Added padding to the projects section */
+/* Added padding for the leadership section */
+.leadership {
+    padding: 4rem 0;
+}
+
+.leadership img {
+    max-width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
 .project-showcase {
     padding: 4rem 0;
 }
