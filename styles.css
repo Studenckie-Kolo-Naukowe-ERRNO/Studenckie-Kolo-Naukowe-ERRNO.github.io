@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Anonymous Pro', monospace;
+    overflow-x: hidden;
 }
 
 .main-content {
@@ -23,11 +24,13 @@ body {
 .btn-primary {
     background-color: #ff8d3f;
     border-color: #ff8d3f;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn-primary:hover {
     background-color: #e07b34;
     border-color: #d1712e;
+    transform: translateY(-2px);
 }
 
 .btn-primary:focus {
@@ -37,10 +40,102 @@ body {
 .btn-primary:active {
     background-color: #d1712e;
     border-color: #c26729;
+    transform: translateY(0);
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff8d3f !important;
 }
 
 footer {
     padding: 2rem 0;
     background-color: #f8f9fa;
     flex-shrink: 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #ff8d3f }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.fade-in-down {
+    animation: fadeInDown 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.scale-in {
+    animation: scaleIn 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+.hero-section h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid #ff8d3f;
+    width: 0;
+    box-sizing: content-box;
+    transform: translateZ(0);
+    margin: 0 auto;
+
+    animation:
+            typing 3s steps(37, end) forwards,
+            blink-caret .75s step-end infinite;
+    animation-delay: 0.5s;
 }
