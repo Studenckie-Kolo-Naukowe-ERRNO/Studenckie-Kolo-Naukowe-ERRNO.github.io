@@ -42,6 +42,12 @@ body {
     padding-top: 4rem;
 }
 
+/* Added padding to the projects section */
+.project-showcase {
+    padding: 4rem 0;
+}
+
+
 #about a {
     color: #ff8d3f;
 }
