@@ -10,16 +10,32 @@ body {
     overflow-x: hidden;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
 .main-content {
     flex-grow: 1;
+    padding-top: 3.5rem;
 }
 
 .hero-section {
-    background-color: #e9ecef;
-    padding: 4rem 2rem;
-    margin-bottom: 2rem;
-    border-radius: .3rem;
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 6rem 0;
 }
+
+.hero-section hr {
+    border-top-color: rgba(255, 255, 255, 0.3);
+}
+
+#about {
+    padding-top: 4rem;
+}
+
 
 .btn-primary {
     background-color: #ff8d3f;
