@@ -15,6 +15,25 @@ body {
     top: 0;
     width: 100%;
     z-index: 1030;
+    background-color: #343a40;
+    color: #ffffff;
+    animation-delay: 0.1s;
+}
+
+.navbar-brand {
+    color: #ffffff;
+}
+
+.navbar .nav-link {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.nav-link:hover {
+    color: #ff8d3f !important;
+}
+
+.navbar .nav-link.active {
+    color: #ffffff;
 }
 
 .navbar-brand img {
@@ -34,17 +53,51 @@ body {
     padding: 6rem 0;
 }
 
+.hero-section h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid #ff8d3f;
+    width: 0;
+    box-sizing: content-box;
+    transform: translateZ(0);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+    font-size: 2.5rem;
+    animation:
+            typing 3s steps(42, end) forwards,
+            blink-caret .75s step-end infinite;
+    animation-delay: 0.5s;
+}
+
+.hero-section .lead {
+    animation-delay: 3.3s;
+}
+
 .hero-section hr {
     border-top-color: rgba(255, 255, 255, 0.3);
+    animation-delay: 3.6s;
 }
+
+.hero-section hr + p {
+    animation-delay: 3.9s;
+}
+
+.hero-section .btn-primary {
+    animation-delay: 4.2s;
+}
+
 
 #about {
     padding-top: 4rem;
+    animation-delay: 0.5s;
 }
 
-/* Added padding for the leadership section */
 .leadership {
     padding: 4rem 0;
+    animation-delay: 0.8s;
 }
 
 .leadership img {
@@ -55,6 +108,65 @@ body {
 
 .project-showcase {
     padding: 4rem 0;
+    animation-delay: 1.3s;
+}
+
+.project-showcase .carousel-item {
+    min-height: 450px; /* Increased min-height to accommodate the card height + some buffer */
+}
+
+/* Force project cards in the carousel to have a consistent height */
+.project-showcase .carousel-item .card {
+    height: 400px; /* Set a fixed height for the card - ADJUST THIS VALUE AS NEEDED */
+    /* max-width is set inline in HTML, could move here */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Added 3D-like drop shadow */
+}
+
+/* Style for the container wrapping project images */
+.project-image-container {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    overflow: hidden;
+    border-top-left-radius: var(--bs-card-border-radius);
+    border-top-right-radius: var(--bs-card-border-radius);
+}
+
+/* Style for the project images inside the container */
+.project-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Make card body scrollable if text overflows the fixed card height */
+.project-showcase .carousel-item .card .card-body {
+    overflow-y: auto; /* Add vertical scrolling */
+    /* Ensure card body takes up the remaining height after the image */
+    height: calc(100% - 200px); /* Adjust if card height or image height changes */
+}
+
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: transparent;
+}
+
+.carousel-indicators button {
+    background-color: #343a40 !important;
+    opacity: 0.5;
+}
+
+.carousel-indicators .active {
+    background-color: #ff8d3f !important;
+    opacity: 1 !important;
 }
 
 
@@ -88,14 +200,13 @@ body {
     transition: color 0.3s ease;
 }
 
-.nav-link:hover {
-    color: #ff8d3f !important;
-}
 
 footer {
     padding: 2rem 0;
-    background-color: #f8f9fa;
+    background-color: #343a40;
+    color: #ffffff;
     flex-shrink: 0;
+    animation-delay: 2.1s;
 }
 
 @keyframes fadeIn {
@@ -166,24 +277,6 @@ footer {
     opacity: 0;
 }
 
-.hero-section h1 {
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: .15em solid #ff8d3f;
-    width: 0;
-    box-sizing: content-box;
-    transform: translateZ(0);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    display: block;
-    font-size: 2.5rem;
-    animation:
-            typing 3s steps(42, end) forwards,
-            blink-caret .75s step-end infinite;
-    animation-delay: 0.5s;
-}
 
 @media (max-width: 991.98px) {
     .hero-section h1 {
