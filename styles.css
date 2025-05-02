@@ -104,6 +104,7 @@ body {
     max-width: 150px;
     display: block;
     margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added subtle drop shadow */
 }
 
 .project-showcase {
@@ -112,37 +113,31 @@ body {
 }
 
 .project-showcase .carousel-item {
-    min-height: 450px; /* Increased min-height to accommodate the card height + some buffer */
+    min-height: 450px;
 }
 
-/* Force project cards in the carousel to have a consistent height */
 .project-showcase .carousel-item .card {
-    height: 400px; /* Set a fixed height for the card - ADJUST THIS VALUE AS NEEDED */
-    /* max-width is set inline in HTML, could move here */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Added 3D-like drop shadow */
+    height: 400px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
-/* Style for the container wrapping project images */
 .project-image-container {
     width: 100%;
-    height: 200px; /* Fixed height for images */
+    height: 200px;
     overflow: hidden;
     border-top-left-radius: var(--bs-card-border-radius);
     border-top-right-radius: var(--bs-card-border-radius);
 }
 
-/* Style for the project images inside the container */
 .project-image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-/* Make card body scrollable if text overflows the fixed card height */
 .project-showcase .carousel-item .card .card-body {
-    overflow-y: auto; /* Add vertical scrolling */
-    /* Ensure card body takes up the remaining height after the image */
-    height: calc(100% - 200px); /* Adjust if card height or image height changes */
+    overflow-y: auto;
+    height: calc(100% - 200px);
 }
 
 
